@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Diaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Trivia del Día</h1>
+        <div id="quiz-box">
+            <p id="question-text">Cargando pregunta...</p>
+            <div class="options-container">
+                <button id="btn-a" onclick="checkAnswer('a')">Opción A</button>
+                <button id="btn-b" onclick="checkAnswer('b')">Opción B</button>
+            </div>
+            <div id="message"></div>
+            <p id="retry-msg" class="hidden">Vuelve mañana para un nuevo desafío.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
